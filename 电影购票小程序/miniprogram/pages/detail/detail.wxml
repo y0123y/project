@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<image src='{{detailInfo.cover_img.url}}'></image>
+<view>{{detailInfo.title}}</view>

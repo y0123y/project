@@ -1,0 +1,21 @@
+<block wx:for="{{listItem}}" wx:key="title">
+<view 
+class='list-item'  
+bindtap='goDetail'
+data-id='{{item.id}}'
+>
+  <image src="{{item.cover.url}}"></image>
+  <view class='li-info'>
+    <view class='title'>{{item.title}}</view>
+    <view class='info'>
+      上映时间:<text>{{item.year}}</text>
+    </view>
+    <view class='info'>主演:
+      <text wx:for="{{item.actors}}">{{item}}</text>
+    </view>
+  </view>
+  <button>购票</button>
+</view>
+</block>
+
+

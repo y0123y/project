@@ -1,0 +1,11 @@
+.user-avatar{
+  width: 80px;
+  height: 80px;
+  margin: 30px auto;
+}
+.nickname{
+  text-align: center;
+}
+.btn-bar{
+  margin-top: 30px;
+}

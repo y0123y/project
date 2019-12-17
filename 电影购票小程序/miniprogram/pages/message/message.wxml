@@ -1,0 +1,18 @@
+<van-cell-group>
+  <van-field
+    value="{{ inpMsg }}"
+    placeholder="请输入心情"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<view class='btn-bar'>
+  <van-button bindtap='saveMsg' type="primary" size="large">发表心情</van-button>
+</view>
+
+<block wx:for="{{msgList}}" wx:key="time">
+  <van-panel title="{{item.time}}"  status="心情">
+  <view class='content'>{{item.message}}</view>
+</van-panel>
+</block>

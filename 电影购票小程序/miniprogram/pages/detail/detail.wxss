@@ -1,0 +1,7 @@
+.gsg{
+  width:180px;
+  height:220px;
+}
+.yui{
+  color : bisque
+  }
